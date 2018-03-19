@@ -27,8 +27,8 @@ public class emojiPredict{
 	private static double[] emojiProb = new double[20];
 	
 	private static String temp[] = {"the","be","to","of","and","a","an","in","that","has","have","i","it","for",
-									"not","on","with","as","you","at","this","because","we","them","",
-									"do","can"};
+					"not","on","with","as","you","at","this","because","we","them","",
+					"do","can"};
 	
 	private static ArrayList<String> ignoreWords = new ArrayList<String>(Arrays.asList(temp));
 
@@ -129,10 +129,10 @@ public class emojiPredict{
 	public static void main(String args[]) throws IOException {
 		BufferedReader text = new BufferedReader
 				(new FileReader
-						("D:/-This Pc-/Documents/Files/Eclipse Projects/EmojiPrediction/src/us_trial.txt")); 
+				("D:/-This Pc-/Documents/Files/Eclipse Projects/EmojiPrediction/src/us_trial.txt")); 
 		BufferedReader label = new BufferedReader
 				(new FileReader
-						("D:/-This Pc-/Documents/Files/Eclipse Projects/EmojiPrediction/src/us_trialLabel.txt")); 
+				("D:/-This Pc-/Documents/Files/Eclipse Projects/EmojiPrediction/src/us_trialLabel.txt")); 
 		
 		getData(text,label); text.close(); label.close();
 
