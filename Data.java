@@ -17,6 +17,6 @@ public class Data implements Comparable<Data>
     return 0;
   }
   public String toString() {
-	  return word + " " + total + " ";
+      return word + " " + total + " ";
   }
 }
